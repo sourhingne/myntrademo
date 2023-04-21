@@ -28,10 +28,10 @@ Nowdays E-coomerce has become a fruitful and popular among the users where they 
 * Install dependencies: npm install
 
 ## Authors
-* Dhnanjay Deshpande   deshpandedhananjay84@gmail.com
-* Sourabh Hingne       sourabhhingne24@gmail.com
-* Suchita Khadse      
-* Bhagyashree Chaudhari
+* Dhnanjay Deshpande @TestingShastra   deshpandedhananjay84@gmail.com 
+* Sourabh Hingne  @TestingShastra       sourabhhingne24@gmail.com 
+* Suchita Khadse @TestingShastra     
+* Bhagyashree Chaudhari @TestingShastra
 
 
 
