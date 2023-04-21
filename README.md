@@ -9,31 +9,29 @@ Nowdays E-coomerce has become a fruitful and popular among the users where they 
 * License
 
 ### Features
-User authentication
-Product browsing and search
-Product categories and filters
-Shopping cart functionality
-Checkout process
-Order history and tracking
-Admin panel for managing products, orders, and users
-Fast and secure payment handling gateways
-Facility to add several products in cart
-Faster returning policies
-24x7 Customer care service
-Smooth and careful product handling
+* User authentication
+* Product browsing and search
+* Product categories and filters
+* Shopping cart functionality
+* Checkout process
+* Order history and tracking
+* Admin panel for managing products, orders, and users
+* Fast and secure payment handling gateways
+* Facility to add several products in cart
+* Faster returning policies
+* 24x7 Customer care service
+* Smooth and careful product handling
 
 ### Installation
-To install the application, follow these steps:
-
-[Insert any prerequisites here, e.g. install Node.js]
-Clone the repository: git clone https://github.com/your-username/your-repo-name.git
-Install dependencies: npm install
+* To install the application, follow these steps:
+* Clone the repository: git clone https://github.com/your-username/your-repo-name.git
+* Install dependencies: npm install
 
 ## Authors
-Dhnanjay Deshpande   deshpandedhananjay84@gmail.com
-Sourabh Hingne       sourabhhingne24@gmail.com
-Suchita Khadse      
-Bhagyashree Chaudhari
+* Dhnanjay Deshpande   deshpandedhananjay84@gmail.com
+* Sourabh Hingne       sourabhhingne24@gmail.com
+* Suchita Khadse      
+* Bhagyashree Chaudhari
 
 
 
