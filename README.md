@@ -1,3 +1,3 @@
-# Myantra
-
 # Myntra an E-Commerce Web Application
+Nowdays E-coomerce has become a fruitful and popular among the users where they can easily explore their choices of various materialistic things just by clicking on the web application they can search their product and can buy it within no time.You can shop online at Myntra from the comfort of your home and get your favourites delivered right to your doorstep. This is an e-commerce web application that allows users to browse products, add them to their cart, and checkout. It is built using [insert programming languages and frameworks used here] and is designed to be scalable and easy to maintain.
+
