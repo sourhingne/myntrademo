@@ -8,6 +8,7 @@ import org.testng.Assert;
 import com.Myntra23a.Util.Environment;
 import com.Myntra23a.keywords.UIKeyword;
 import com.Myntra23a.pages.HomePage;
+import com.Myntra23a.pages.MenTshirtPage;
 import com.Myntra23a.pages.PoloMenPage;
 
 import io.cucumber.java.en.And;
@@ -49,6 +50,26 @@ public class ProductsStepsDefination {
 			Assert.assertTrue(text.contains("Polo"), "Product is mismatch:" + text);
 
 		}
+	}
+
+	@When(" User hover on men menu")
+	public void hoversOnMenMenu() {
+		HomePage homePage = new HomePage();
+		homePage.hoverOnMenMenu();
+	}
+
+	@And("user clicks on men t-shirt")
+	public void clickOnTshirt() {
+		HomePage homePage = new HomePage();
+		homePage.clickonTshirt();
+
+	}
+
+	@Then("user select popularity filter")
+	public void popularityfilter() {
+		MenTshirtPage mentshirt = new MenTshirtPage();
+		mentshirt.hoveronSortFilter();
+		mentshirt.selectPopularityFilter();
 	}
 
 }

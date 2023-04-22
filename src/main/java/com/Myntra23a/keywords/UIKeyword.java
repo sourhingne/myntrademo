@@ -1,3 +1,10 @@
+/*
+ * Project Name: Myntra23a
+ * Author:Sourabh Hingne for Testing Shastra
+ * Client: Avinash Pingale
+ * Organization: Testing Shastra
+ */
+
 package com.Myntra23a.keywords;
 
 import java.awt.AWTException;
@@ -12,10 +19,21 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class UIKeyword {
 	public static RemoteWebDriver driver;
+
+	/**
+	 * Opens specified web Browser
+	 * 
+	 * @param browserName. Browser name should only
+	 *                     include,Chrome,Firefox,InternetExplorer. No browserName
+	 *                     apart from mentioned is allowed.
+	 * 
+	 */
 
 	public static void openBrowser(String browserName) {
 		if (browserName.equalsIgnoreCase("Chrome")) {
@@ -32,6 +50,12 @@ public class UIKeyword {
 		System.out.println(browserName + "browser is launched successfully");
 	}
 
+	/**
+	 * It opens the specified url in Web Browser recently opened by driver instance
+	 * 
+	 * @param url {@code String} url to open
+	 * @return void
+	 */
 	public static void launchUrl(String url) {
 		driver.get(url);
 		System.out.println("url is launched:" + url);
@@ -44,6 +68,12 @@ public class UIKeyword {
 	public static void hitbutton(int keycode) throws AWTException {
 		Robot robo = new Robot();
 		robo.keyPress(keycode);
+	}
+	
+	
+	public static void selectValueFromDropdownlist(WebElement element) {
+     Select select = new Select(element);
+     select.deselectByVisibleText(getTitle());
 	}
 
 	public static void releaseButton(int keycode) throws AWTException {
@@ -81,4 +111,20 @@ public class UIKeyword {
 	public static String getTitle() {
 		return driver.getTitle();
 	}
+
+	public static void mousemove(WebElement element) {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).build().perform();
+	}
+
+	public static void clickOn(WebElement element) {
+		element.click();
+
+	}
+
+	public static void selectByPopularity(WebElement element, String text) {
+		Select select = new Select(element);
+		select.selectByVisibleText(text);
+	}
+
 }
