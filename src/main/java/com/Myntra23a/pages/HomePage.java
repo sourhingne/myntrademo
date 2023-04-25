@@ -19,6 +19,21 @@ public class HomePage {
 	@FindBy(css = "a[data-index=\"2\"]")
 	public WebElement kidsMenuElement;
 
+	@FindBy(css = "span.myntraweb-sprite.desktop-iconBag.sprites-headerBag")
+	public WebElement Bag;
+
+	@FindBy(css = ".desktop-showBanner > a:nth-child(4)")
+	public WebElement contactUs;
+
+	@FindBy(css = " nav > div > div:nth-child(2) > div > a")
+	public WebElement Women;
+
+	@FindBy(css = "nav > div > div:nth-child(2) > div li:nth-child(1) > ul > li:nth-child(13) > a")
+	public WebElement BeltsScarvesAndMore;
+	
+	@FindBy(css = " nav > div > div:nth-child(5) > div > a")
+	public WebElement BEAUTY;
+
 	public HomePage() {
 
 		PageFactory.initElements(UIKeyword.driver, this);
@@ -39,5 +54,25 @@ public class HomePage {
 		UIKeyword.releaseButton(KeyEvent.VK_ENTER);
 	}
 
-	
+
+	public void ClickOnBag() {
+		UIKeyword.ClickOnElement(Bag);
+	}
+
+	public void ClickOnContactUs() {
+		UIKeyword.scrollby();
+		UIKeyword.ClickOnElement(contactUs);
+	}
+
+	public void ClicksOnWomen() {
+		UIKeyword.ClickOnElement(Women);
+	}
+
+	public void ClickOnBeltsScarvesAndMore() {
+		UIKeyword.ClickOnElement(searchComponentElement);
+	}
+	public void ClicksOnBEAUTY() {
+		UIKeyword.ClickOnElement(BEAUTY);
+	}
+
 }
