@@ -69,11 +69,10 @@ public class UIKeyword {
 		Robot robo = new Robot();
 		robo.keyPress(keycode);
 	}
-	
-	
+
 	public static void selectValueFromDropdownlist(WebElement element) {
-     Select select = new Select(element);
-     select.deselectByVisibleText(getTitle());
+		Select select = new Select(element);
+		select.deselectByVisibleText(getTitle());
 	}
 
 	public static void releaseButton(int keycode) throws AWTException {
@@ -110,6 +109,18 @@ public class UIKeyword {
 
 	public static String getTitle() {
 		return driver.getTitle();
+	}
+
+	public static void ClickOnElement(WebElement element) {
+		element.click();
+	}
+
+	public static void scrollby() {
+		driver.executeScript("window.scrollBy(0,800)");
+	}
+
+	public static void scrollwindow(int x, int y) {
+		driver.executeScript("window.scrollBy(arguments[0],arguments[1]))", x, y);
 	}
 
 	public static void mousemove(WebElement element) {
