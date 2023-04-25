@@ -12,10 +12,25 @@ import com.Myntra23a.keywords.UIKeyword;
 public class HomePage {
 	@FindBy(css = "input[placeholder=\"Search for products, brands and more\"]")
 	public WebElement searchComponentElement;
+	@FindBy(css = "div.desktop-userIconsContainer > span.desktop-userTitle")
+	public WebElement profilElement;
+	@FindBy(css = "div.desktop-getUserInLinks.desktop-getInLinks > a")
+	public WebElement LOGIN_SIGNUP;
+	@FindBy(css = "a[data-index=\"2\"]")
+	public WebElement kidsMenuElement;
 
 	public HomePage() {
 
 		PageFactory.initElements(UIKeyword.driver, this);
+	}
+
+	public void hoveronProfile() {
+		UIKeyword.mousemove(profilElement);
+
+	}
+
+	public void clickOnLOGIN_SIGNUP() {
+		UIKeyword.clickOn(LOGIN_SIGNUP);
 	}
 
 	public void searchProduct(String ProductName) throws AWTException {
@@ -24,4 +39,5 @@ public class HomePage {
 		UIKeyword.releaseButton(KeyEvent.VK_ENTER);
 	}
 
+	
 }

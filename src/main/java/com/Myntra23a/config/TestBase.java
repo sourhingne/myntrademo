@@ -1,7 +1,5 @@
 package com.Myntra23a.config;
 
-import javax.management.loading.PrivateClassLoader;
-
 import org.apache.log4j.Logger;
 
 import com.Myntra23a.keywords.UIKeyword;
