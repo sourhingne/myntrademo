@@ -12,6 +12,27 @@ import com.Myntra23a.keywords.UIKeyword;
 public class HomePage {
 	@FindBy(css = "input[placeholder=\"Search for products, brands and more\"]")
 	public WebElement searchComponentElement;
+	@FindBy(css = "div.desktop-userIconsContainer > span.desktop-userTitle")
+	public WebElement profilElement;
+	@FindBy(css = "div.desktop-getUserInLinks.desktop-getInLinks > a")
+	public WebElement LOGIN_SIGNUP;
+	@FindBy(css = "a[data-index=\"2\"]")
+	public WebElement kidsMenuElement;
+
+	@FindBy(css = "span.myntraweb-sprite.desktop-iconBag.sprites-headerBag")
+	public WebElement Bag;
+
+	@FindBy(css = ".desktop-showBanner > a:nth-child(4)")
+	public WebElement contactUs;
+
+	@FindBy(css = " nav > div > div:nth-child(2) > div > a")
+	public WebElement Women;
+
+	@FindBy(css = "nav > div > div:nth-child(2) > div li:nth-child(1) > ul > li:nth-child(13) > a")
+	public WebElement BeltsScarvesAndMore;
+	
+	@FindBy(css = " nav > div > div:nth-child(5) > div > a")
+	public WebElement BEAUTY;
 
 	@FindBy(css = "nav > div > div:nth-child(1) > div > a")
 	public WebElement menmenu;
@@ -39,11 +60,21 @@ public class HomePage {
 		PageFactory.initElements(UIKeyword.driver, this);
 	}
 
+	public void hoveronProfile() {
+		UIKeyword.mousemove(profilElement);
+
+	}
+
+	public void clickOnLOGIN_SIGNUP() {
+		UIKeyword.clickOn(LOGIN_SIGNUP);
+	}
+
 	public void searchProduct(String ProductName) throws AWTException {
 		UIKeyword.enterText(searchComponentElement, ProductName);
 		UIKeyword.hitbutton(KeyEvent.VK_ENTER);
 		UIKeyword.releaseButton(KeyEvent.VK_ENTER);
 	}
+
 
 	public void hoverOnMenMenu() {
 		UIKeyword.mousemove(menmenu);
@@ -53,6 +84,7 @@ public class HomePage {
 	public void clickonTshirt() {
 		UIKeyword.clickOn(tshirt);
 	}
+
 
 	public void ClickOnBag() {
 		UIKeyword.ClickOnElement(Bag);
@@ -71,7 +103,14 @@ public class HomePage {
 		UIKeyword.ClickOnElement(searchComponentElement);
 	}
 
+
 	public void ClicksOnBEAUTY() {
 		UIKeyword.ClickOnElement(BEAUTY);
 	}
+
+	public void ClicksOnBEAUTY() {
+		UIKeyword.ClickOnElement(BEAUTY);
+	}
+
+
 }
