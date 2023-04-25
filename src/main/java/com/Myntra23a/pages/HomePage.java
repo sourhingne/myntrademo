@@ -34,6 +34,27 @@ public class HomePage {
 	@FindBy(css = " nav > div > div:nth-child(5) > div > a")
 	public WebElement BEAUTY;
 
+	@FindBy(css = "nav > div > div:nth-child(1) > div > a")
+	public WebElement menmenu;
+
+	@FindBy(css = "nav >div > div:nth-child(1) div > div > div > div > li:nth-child(1) > ul > li:nth-child(2) > a")
+	public WebElement tshirt;
+
+	@FindBy(css = "span.myntraweb-sprite.desktop-iconBag.sprites-headerBag")
+	public WebElement Bag;
+
+	@FindBy(css = ".desktop-showBanner > a:nth-child(4)")
+	public WebElement contactUs;
+
+	@FindBy(css = " nav > div > div:nth-child(2) > div > a")
+	public WebElement Women;
+
+	@FindBy(css = "nav > div > div:nth-child(2) > div li:nth-child(1) > ul > li:nth-child(13) > a")
+	public WebElement BeltsScarvesAndMore;
+
+	@FindBy(css = " nav > div > div:nth-child(5) > div > a")
+	public WebElement BEAUTY;
+
 	public HomePage() {
 
 		PageFactory.initElements(UIKeyword.driver, this);
@@ -55,6 +76,16 @@ public class HomePage {
 	}
 
 
+	public void hoverOnMenMenu() {
+		UIKeyword.mousemove(menmenu);
+
+	}
+
+	public void clickonTshirt() {
+		UIKeyword.clickOn(tshirt);
+	}
+
+
 	public void ClickOnBag() {
 		UIKeyword.ClickOnElement(Bag);
 	}
@@ -71,8 +102,15 @@ public class HomePage {
 	public void ClickOnBeltsScarvesAndMore() {
 		UIKeyword.ClickOnElement(searchComponentElement);
 	}
+
+
 	public void ClicksOnBEAUTY() {
 		UIKeyword.ClickOnElement(BEAUTY);
 	}
+
+	public void ClicksOnBEAUTY() {
+		UIKeyword.ClickOnElement(BEAUTY);
+	}
+
 
 }
