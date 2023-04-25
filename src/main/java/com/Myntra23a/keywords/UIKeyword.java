@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class UIKeyword {
@@ -81,4 +82,21 @@ public class UIKeyword {
 	public static String getTitle() {
 		return driver.getTitle();
 	}
-}
+
+	public static void ClickOnElement(WebElement element) {
+		element.click();
+	}
+	public static void scrollby() {
+		driver.executeScript("window.scrollBy(0,800)");
+	}
+	public static void scrollwindow(int x, int y) {
+		driver.executeScript("window.scrollBy(arguments[0],arguments[1]))", x, y);
+	}
+	public static void mousemove(WebElement element) {
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).build().perform();
+	}
+
+	
+	}
+
