@@ -16,17 +16,13 @@ public class HomePage {
 	@FindBy(css = "span.myntraweb-sprite.desktop-iconBag.sprites-headerBag")
 	public WebElement Bag;
 
-	@FindBy(css = ".desktop-showBanner > a:nth-child(4)")
-	public WebElement contactUs;
-
 	@FindBy(css = " nav > div > div:nth-child(2) > div > a")
 	public WebElement Women;
 
 	@FindBy(css = "nav > div > div:nth-child(2) > div li:nth-child(1) > ul > li:nth-child(13) > a")
 	public WebElement BeltsScarvesAndMore;
+
 	
-	@FindBy(css = " nav > div > div:nth-child(5) > div > a")
-	public WebElement BEAUTY;
 
 	public HomePage() {
 
@@ -43,11 +39,6 @@ public class HomePage {
 		UIKeyword.ClickOnElement(Bag);
 	}
 
-	public void ClickOnContactUs() {
-		UIKeyword.scrollby();
-		UIKeyword.ClickOnElement(contactUs);
-	}
-
 	public void ClicksOnWomen() {
 		UIKeyword.ClickOnElement(Women);
 	}
@@ -55,7 +46,6 @@ public class HomePage {
 	public void ClickOnBeltsScarvesAndMore() {
 		UIKeyword.ClickOnElement(searchComponentElement);
 	}
-	public void ClicksOnBEAUTY() {
-		UIKeyword.ClickOnElement(BEAUTY);
-	}
+
+	
 }
