@@ -19,13 +19,18 @@ import com.Myntra23a.keywords.UIKeyword;
 		//PropUtil repo= new PropUtil();
 		//Environment  env = new Environment();
 		
+
 		/*UIKeyword.launchUrl(env.getAppUrl());
 		UIKeyword.enterText(By.cssSelector(repo.getLocator("search_products_txtbx")), "Polo men");
+
+		//UIKeyword.launchUrl(env.getAppUrl());
+		//UIKeyword.enterText(By.cssSelector(repo.getLocator("search_products_txtbx")), "Polo men");
+
 		UIKeyword.hitbutton(KeyEvent.VK_ENTER);
 		UIKeyword.releaseButton(KeyEvent.VK_ENTER);
-		List<String> productTitles = UIKeyword.getTexts(By.cssSelector(repo.getLocator("product_titles_txt")));
-		for (String productTitle : productTitles) {
-			Assert.assertTrue(productTitles.contains("polo"), "product Title doesnt Contains polo: " + productTitle);
+	//	List<String> productTitles = UIKeyword.getTexts(By.cssSelector(repo.getLocator("product_titles_txt")));
+		//for (String productTitle : productTitles) {
+		//	Assert.assertTrue(productTitles.contains("polo"), "product Title doesnt Contains polo: " + productTitle);
 
 		}
 	}*/
