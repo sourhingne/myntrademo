@@ -125,6 +125,7 @@ public class UIKeyword {
 
 	public static String getTitle() {
 		return driver.getTitle();
+
 	}
 
 
@@ -200,28 +201,19 @@ public class UIKeyword {
 	public static void ClickOnElement(WebElement element) {
 		element.click();
 	}
+
 	public static void scrollby() {
 		driver.executeScript("window.scrollBy(0,800)");
 
 	}
+
 	public static void scrollwindow(int x, int y) {
 		driver.executeScript("window.scrollBy(arguments[0],arguments[1]))", x, y);
-	}
-
-	
+	}	
 	
 
-}
-
-
-	
-	
 	public static void mousemove(WebElement element) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element).build().perform();
 	}
-
-	
-	}
-
-
+  }
